@@ -7,5 +7,6 @@
  */
 int main(void)
 {
-return (0);
+puts("\anthing else");
+	return (0);
 }
