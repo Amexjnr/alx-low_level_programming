@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-puts("\anthing else");
+puts("\ anything else");
 	return (0);
 }
