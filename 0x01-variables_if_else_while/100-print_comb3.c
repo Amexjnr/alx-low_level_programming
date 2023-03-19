@@ -3,7 +3,7 @@
 /**
  * main - Function to print combination of two numbers.
  *
- *Return: 0 on success
+ * Return: 0 on success
  */
 
 int main(void)
@@ -31,7 +31,7 @@ int main(void)
 			}
 			j++;
 		}
-		j = '1';
+		j = '0';
 		i++;
 	}
 	return (0);
