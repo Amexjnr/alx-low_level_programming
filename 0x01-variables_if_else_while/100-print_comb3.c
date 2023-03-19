@@ -1,11 +1,9 @@
 #include <stdio.h>
-
 /**
- * main - Function to print combination of two numbers.
+ * main - print numbers from 00 to 99.
 (*
  * Return: 0 on success
  */
-
 int main(void)
 {
 	int i = '0';
@@ -15,7 +13,7 @@ int main(void)
 	{
 		while (j <= '9')
 		{
-			if (i > j || i == j)
+			if (!(i > j || i == j))
 			{
 				putchar(i);
 				putchar(j);
