@@ -11,7 +11,7 @@ int main(void)
 	int i = '0';
 	int j = '0';
 
-	while (i <= '9')
+	while (i <= '8')
 	{
 		while (j <= '9')
 		{
@@ -21,12 +21,8 @@ int main(void)
 				putchar(j);
 				if (i == '8' && j == '9')
 				{
-					putchar('\n');
-				}
-				else
-				{
 					putchar(',');
-					putchar(' ');
+                                        putchar(' ');
 				}
 			}
 			j++;
@@ -34,6 +30,7 @@ int main(void)
 		j = '0';
 		i++;
 	}
+	putchar('\n');
 	return (0);
 }
 
