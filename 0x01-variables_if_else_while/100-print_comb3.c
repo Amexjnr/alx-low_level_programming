@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - print numbers from 00 to 99.
+ * main - print numbers from 01 to 89.
 (*
  * Return: 0 on success
  */
