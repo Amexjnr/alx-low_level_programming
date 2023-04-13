@@ -11,16 +11,7 @@
 char **strtow(char *str)
 {
 	char **split;
-	int index;
-	int k;
-	int tem;
-	int s;
-	int ws;
-
-	k = 0;
-	tem = 0;
-	s = 0;
-	ws = num_words(str);
+	int index, k = 0, tem = 0, s = 0, ws = num_words(str);
 
 	if (ws == 0)
 		return (NULL);
@@ -38,7 +29,7 @@ char **strtow(char *str)
 				{
 					while (tem < s)
 					{
-						split[k][tem] = str[(index - s) +tem];
+						split[k][tem] = str[(index - s) + tem];
 						tem++;
 					}
 					split[k][tem] = '\0';
@@ -61,9 +52,9 @@ char **strtow(char *str)
 		return (NULL);
 }
 
-
 /**
-* num_words - A function that counts the number of words in str
+* num_words - A function that counts the number
+* of words in str
 * @str: string to be used
 *
 * Return: number of words
@@ -82,7 +73,8 @@ int num_words(char *str)
 		{
 			index++;
 		}
-		else if (((str[index] == ' ') || (str[index] == '\0')) && index && (str[index - 1] != ' '))
+		else if (((str[index] == ' ') || (str[index] == '\0')) &&
+				index && (str[index - 1] != ' '))
 		{
 			ws += 1;
 			index++;
@@ -105,7 +97,7 @@ int num_words(char *str)
 int len(char *str)
 {
 	int len;
-	
+
 	len = 0;
 	if (str != NULL)
 	{
