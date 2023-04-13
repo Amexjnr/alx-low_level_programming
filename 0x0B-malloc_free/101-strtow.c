@@ -11,25 +11,25 @@
 char **strtow(char *str)
 {
 	char **split;
-	int index, k = 0, tem = 0, s = 0, ws = num_words(str);
+	int i, k = 0, tem = 0, s = 0, ws = num_words(str);
 
 	if (ws == 0)
 		return (NULL);
 	split = (char **) malloc(sizeof(char *) * (ws + 1));
 	if (split != NULL)
 	{
-		for (index = 0; index <= len(str) && ws; index++)
+		for (i = 0; i <= len(str) && ws; i++)
 		{
-			if ((str[index] != ' ') && (str[index] != '\0'))
+			if ((str[i] != ' ') && (str[i] != '\0'))
 				s++;
-			else if (((str[index] == ' ') || (str[index] == '\0')) && index && (str[index - 1] != ' '))
+			else if (((str[i] == ' ') || (str[i] == '\0')) && i && (str[i - 1] != ' '))
 			{
 				split[k] = (char *) malloc(sizeof(char) * s + 1);
 				if (split[k] != NULL)
 				{
 					while (tem < s)
 					{
-						split[k][tem] = str[(index - s) + tem];
+						split[k][tem] = str[(i - s) + tem];
 						tem++;
 					}
 					split[k][tem] = '\0';
